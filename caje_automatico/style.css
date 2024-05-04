@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.Nav{
+    width: 80%;
+    margin: 20px auto 0;
+    padding: 15px 0;
+    background: blue;  
+}
+.Nav-title{
+    width: max-content;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+.Cajero{
+    width: 80%;
+    padding: 5px 0;
+    min-height: 500px;
+    margin: 0 auto;
+    background: #b8b8b8;
+}
+
+/* BOTONES */
+.boton-der,.boton-izq{
+    width: 20%;
+    background: #414141;
+}
+
+
+/* CLIENTES */
+.Cajero-menu{
+    width: 82%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.3px solid #414141;
+    background: #efefef;
+}
+.clientesoff{
+    display: none;
+}
+.Cajero-nombres{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Cajero-menu-title{
+    width: 80%;
+    margin: 15px auto;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.Cajero-menu-user{
+    width: 35%;
+    margin: 50px 0 20px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+}
+
+.der{
+    text-align: right !important;
+}
+
+/* OPEN DISPLAY */
+.open{
+    display: flex !important;
+    width: 82%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 0.3px solid #414141;
+    background: #efefef;
+}
+
+
+
+/* CONTRASEÑA */
+.Cajero-contra{
+    display: none;
+    position: relative;
+}
+.Cajero-contra-texto{
+    width: 70%;
+    margin: 150px auto 15px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.Cajero-contra-pass{
+    width: 40%;
+    height: 38px;
+    padding: 5px 10px;
+    margin: 10px auto 170px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.Cajero-contra-enviar{
+    width: 110px;
+    height: 29px;
+    position: absolute;
+    top: 285px;
+    right: calc(43%);
+}
+.Cajero-contraseña{
+    display: none;
+}
+.error{
+    display: flex;
+    width: 80%;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+/* OPCIONES */
+.Cajero-option{
+    display: none;
+    min-height: 500px;
+}
+.Cajero-option-title{
+    width: 80%;
+    margin: 15px auto 20px;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.Cajero-option-menu{
+    width: 35%;
+    margin: 50px 0 20px;
+    font-size: 26px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+}
+
+/* CONSULTAR SALDO */
+.Cajero-cont{
+    display: none;
+}
+.consultar{
+    width: 82%;
+    min-height: 500px;
+    margin: 20px auto;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.3px solid #414141;
+    background: #efefef;
+}
+.Cajero-cont-title{
+    width: max-content;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.Cajero-cont-saldo{
+    width: max-content;
+    padding: 10px 20px;
+    margin: 0 auto 15px;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    background: white;
+}
+.Cajero-volver{
+    width: max-content;
+    padding: 10px 20px;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* INGRESAR MONTO */
+.Cajero-ingresar{
+    display: none;
+}
+.Ingresar{
+    width: 82%;
+    min-height: 500px;
+    margin: 20px auto;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.3px solid #414141;
+    background: #efefef;
+}
+.Cajero-ingresar-titulo{
+    width: max-content;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.Cajero-stan{
+    width: 90%;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Cajero-ingresar-dinero{
+    width: 40%;
+    height: 38px;
+    padding: 5px 10px;
+    margin: 10px auto 25px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.Cajero-ingresar-enviar{
+    width: 110px;
+    height: 29px;
+}
+.Cajero-t{
+    display: none;
+}
+.tran{
+    display: block;
+    width: max-content;
+    padding: 10px 20px;
+    margin: 0 auto 10px;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    cursor: pointer;
+}
+.noIngreso{
+    display: flex;
+    width: 70%;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+
+/* RETIRAR MONTO */
+.Cajero-retirar{
+    display: none;
+}
+.sacar{
+    width: 82%;
+    min-height: 500px;
+    margin: 20px auto;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.3px solid #414141;
+    background: #efefef;
+}
+.Cajero-retirar-titulo{
+    width: max-content;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.Cajero-retirar-dinero{
+    width: 40%;
+    height: 38px;
+    padding: 5px 10px;
+    margin: 10px auto 25px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.Cajero-retirar-enviar{
+    width: 110px;
+    height: 29px;
+}
+
+
+/* DATOS FINALES */
+.Cajero-mostrar{
+    display: none;
+}
+.ver{
+    width: 82%;
+    min-height: 500px;
+    margin: 20px auto;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.3px solid #414141;
+    background: #efefef;
+}
+.Cajero-mostrar-title, .Cajero-mostrar-subtitle{
+    width: max-content;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.Cajero-mostrar-operacion, .Cajero-mostrar-total{
+    width: max-content;
+    padding: 10px 20px;
+    margin: 0 auto 15px;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    background: white;
+}
+
+
+

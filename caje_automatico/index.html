@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CAJERO AUTOMATICO</title>
+</head>
+<body>
+    <nav class="Nav">
+        <h1 class="Nav-title">BANK TOTE</h1>
+    </nav>
+    <section class="Cajero">
+        <!-- BOTONES -->
+        <div class="boton-der"></div>
+        <div class="boton-der"></div>
+        <div class="boton-der"></div>
+        <div class="boton-izq"></div>
+        <div class="boton-izq"></div>
+        <div class="boton-izq"></div>
+        <!-- CLIENTES -->
+        <div class="Cajero-menu">
+            <h2 class="Cajero-menu-title">bienvenido a su cajero tote <br> eliga su usuario para realizar una operacion</h2>
+            <div class="Cajero-nombres" id="user">
+                <p class="Cajero-menu-user">Mali</p>
+                <p class="Cajero-menu-user der">Gera</p>
+                <p class="Cajero-menu-user">Maui</p>
+                <p class="Cajero-menu-user der">Jose</p>
+                <p class="Cajero-menu-user ">Thai</p>
+                <p class="Cajero-menu-user der">Gohan</p>
+            </div>
+        </div>
+        <!-- CONTRASEÑA -->
+        <div class="Cajero-contra" id="contra">
+            <p class="Cajero-contra-texto">Ingrese su contraseña</p>
+                <input class="Cajero-contra-pass" type="text" name="contraseña" id="pass">
+                <input class="Cajero-contra-enviar" type="submit" value="confirmar" id="checkPass">
+                <P class="Cajero-contraseña">La contraseña no coincide, ingresela nuevamente</P>
+        </div>
+        <!-- OPCIONES -->
+        <div class="Cajero-option" id="option">
+            <h3 class="Cajero-option-title">Realiza cualquier operacion que necesites</h3>
+            <p class="Cajero-option-menu">Consultar saldo</p>
+            <p class="Cajero-option-menu der">Ingresar monto</p>
+            <p class="Cajero-option-menu">Retirar monto</p>
+            <p class="Cajero-option-menu der">Cancelar</p>
+        </div>
+        <!-- CONSULTAR SALDO -->
+        <div class="Cajero-cont" id="cont">
+            <h3 class="Cajero-cont-title">saldo disponible</h3>
+            <p class="Cajero-cont-saldo"></p>
+            <p class="Cajero-volver" id="uno">Otra operacion</p>
+        </div>
+        <!-- INGRESAR MONTO -->
+        <div class="Cajero-ingresar" id="ingresar">
+            <h3 class="Cajero-ingresar-titulo">Ingrese la cantidad</h3>
+            <div class="Cajero-stan">
+                <input class="Cajero-ingresar-dinero" type="number" name="ingreso" id="dinero">
+                <input class="Cajero-ingresar-enviar" type="submit" value="ingresar" id="checkIngreso">
+            </div>
+            <p class="Cajero-volver" id="dos">Otra operacion</p>
+            <p class="Cajero-t" id="ver1">Ver transaccion</p>
+            <P class="Cajero-contraseña">tu cuenta no puede tener mas de 990 mil, ingresa menos dinero.</P>
+        </div>
+        <!-- RETIRAR MONTO -->
+        <div class="Cajero-retirar" id="retirar">
+            <h3 class="Cajero-retirar-titulo">Ingrese la cantidad a sacar</h3>
+            <div class="Cajero-stan">
+                <input class="Cajero-retirar-dinero" type="number" name="ingreso" id="retiro">
+                <input class="Cajero-retirar-enviar" type="submit" value="confirmar" id="checkRetiro">
+            </div>
+            <p class="Cajero-volver" id="tres">Otra operacion</p>
+            <p class="Cajero-t" id="ver2">Ver transaccion</p>
+            <P class="Cajero-contraseña">tu cuenta no puede tener menos de 10 mil, retira un monto mas pequeño.</P>
+        </div>
+        <!-- MOSTRAR DATOS FINALES -->
+        <div class="Cajero-mostrar" id="mostrar">
+            <h4 class="Cajero-mostrar-title">Movimiento</h4>
+            <p class="Cajero-mostrar-operacion">1245</p>
+            <h4 class="Cajero-mostrar-subtitle">saldo total</h4>
+            <p class="Cajero-mostrar-total">124535</p>
+            <p class="Cajero-volver" id="cuatro">Otra operacion</p>
+        </div>
+    </section>
+    <script src="./cajero.js"></script>
+</body>
+</html>
